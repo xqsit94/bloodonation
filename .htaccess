@@ -1,0 +1,27 @@
+Options -Indexes +FollowSymlinks
+RewriteEngine on
+ErrorDocument 400 /404.php
+ErrorDocument 401 /404.php
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
+
+RewriteRule ^404$                                                   404.php [nc]
+RewriteRule ^home$                                                  index.php [nc]
+RewriteRule ^index$                                                 index.php [nc]
+RewriteRule ^aboutus$                                               aboutus.php [nc]
+RewriteRule ^bloodtypes$                                            bloodtypes.php [nc]
+RewriteRule ^eligibility$                                           eligibilityrequirements.php [nc]
+RewriteRule ^peoplebehind$                                          peoplebehind.php [nc]
+RewriteRule ^contactus$                                             contactus.php [nc]
+RewriteRule ^search$                                                search.php [nc]
+RewriteRule ^donors$                                                wblooddonor.php [nc]
+RewriteRule ^bloodrqst-list$                                        wbloodrqst.php [nc]
+RewriteRule ^register$                                              register.php [nc]
+RewriteRule ^rqstblood$                                             rqstblood.php [nc]
+RewriteRule ^success$                                               success.php [nc]
+RewriteRule ^login$                                                 login.php [nc]
+RewriteRule ^logout$                                                logout.php [nc]
+RewriteRule ^edit_profile$                                          edit_profile.php [nc]
+RewriteRule ^view_profile$                                          view_profile.php [nc]
+RewriteRule ^changepwd$                                             changepwd.php [nc]
